@@ -57,7 +57,7 @@ export default function SignIn() {
     try {
       console.log(formData);
       const response = await axios.post(
-        "http://localhost:5000/signin",
+        "/signin",
         formData
       );
 

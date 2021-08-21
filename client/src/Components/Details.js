@@ -59,10 +59,7 @@ export default function SignIn() {
 
     try {
       console.log(formData);
-      const response = await axios.post(
-        "http://localhost:5000/details",
-        formData
-      );
+      const response = await axios.post("/details", formData);
 
       localStorage.setItem("token", response.data.jwt);
       console.log(response.data.jwt);
